@@ -1,0 +1,14 @@
+<form #inputForm="ngForm" (submit)="onGenerateClick(inputForm)" (change)="hideDownload()">
+        <div class="form-control">
+
+        <input class="input input-alt" placeholder="youtube.com/watch?v=abcx7e" required="" type="text" name="url" ngModel>
+        <span class="input-border input-border-alt"></span>
+        <button class="button" type="submit">
+            Generate Summary
+          </button>
+          <button class="button" type="button" *ngIf="pdf" (click)="onDownloadClick()">
+              Download Summary as PDF
+            </button>
+      
+        </div>
+      </form>

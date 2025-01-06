@@ -1,0 +1,43 @@
+.main {
+    // border: 2px solid red;
+    padding: 1rem;
+    height: 100vh;
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    // justify-content: space-between;
+    gap: 1rem;
+}
+
+
+
+.summary {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    // border: 2px solid white;
+}
+
+.loader {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    // left: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid red;
+    top: 50%;
+    /* Move to 50% of parent's height */
+    left: 50%;
+    /* Move to 50% of parent's width */
+    transform: translate(-50%, -50%);
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(0px);
+    border: 1px solid rgba(255, 255, 255, 0.27);
+    color: white;
+}

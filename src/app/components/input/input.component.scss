@@ -1,0 +1,86 @@
+/* From Uiverse.io by adamgiebl */ 
+.input {
+    color: #fff;
+    font-size: 0.9rem;
+    background-color: transparent;
+    width: 70%;
+    box-sizing: border-box;
+    padding-inline: 0.5em;
+    padding-block: 0.7em;
+    border: none;
+    border-bottom: var(--border-height) solid var(--border-before-color);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    
+  }
+  
+  .input-border {
+    position: absolute;
+    background: var(--border-after-color);
+    width: 0%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+  }
+  
+  .input:focus {
+    outline: none;
+  }
+  
+  .input:focus + .input-border {
+    width: 100%;
+  }
+  
+  .form-control {
+    // position: relative;-so
+    --width-of-input: 300px;
+    button{
+        // color: orange;
+        cursor: pointer;
+    }
+  }
+  
+  .input-alt {
+    font-size: 1.2rem;
+    padding-inline: 1em;
+    padding-block: 0.8em;
+    box-shadow: 0 4px 8px rgba(226, 218, 218, 0.1);
+    // border: 2px solid pink;
+  }
+  
+  .input-border-alt {
+    height: 3px;
+    background: linear-gradient(90deg, #FF6464 0%, #FFBF59 50%, #47C9FF 100%);
+    transition: width 0.4s cubic-bezier(0.42, 0, 0.58, 1.00);
+  }
+  
+  .input-alt:focus + .input-border-alt {
+    width: 100%;
+  }
+
+ 
+  .button{
+    display: flex;
+    background-color: rgb(167, 159, 167);
+    width: fit-content;
+    height: 1rem;
+    padding: 1rem;
+    align-items: center;
+    border-radius: 7px;
+    background-color: rgb(54, 54, 54);
+    border: 2px solid rgb(233, 227, 233);
+    transition: all 0.3s ease-in-out;
+    color: white;
+  }
+
+  .button:hover{
+    background-color: #94bbed;
+  }
+
+  .form-control{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    // background-color: #FF6464;
+    
+  }
