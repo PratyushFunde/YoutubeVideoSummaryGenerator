@@ -2,7 +2,7 @@ import google.generativeai as genai
 from youtube_transcript_api import YouTubeTranscriptApi
 
 # def get_summary(text):    
-#     genai.configure(api_key="AIzaSyCPL7RgLXknm-Sdh4cVmBmXh-ot5ZH_ISw")
+#     genai.configure(api_key="Your_API_Key")
 #     model = genai.GenerativeModel("gemini-1.5-flash")
 #     response = model.generate_content(prompt+text)
 #     print(response.text)
